@@ -1,15 +1,13 @@
+The objective of this project was to simulate a scenario where an audio signal is corrupted with noise, and then apply various filtering techniques to remove the noise from the signal. Specifically, the project involved the use of a Notch filter with a pole-zero approach, a Bandstop Butterworth filter, and both Lowpass and Highpass Butterworth filters.
 
-Corrupt an audio Signal with 2khz noise and use various filtering techniques to filter it.
+The first filter used was the Notch filter with a pole-zero approach. A Notch filter is a type of filter that removes a specific frequency band from the signal. The pole-zero approach involves designing the filter by finding the locations of poles and zeros in the complex plane. The filter was designed to remove a specific frequency band of noise from the corrupted audio signal.
 
-1.	NOTCH FILTER POLE ZERO APPROACH:
-Every digital filter can be specified by its poles and zeros (together with a gain factor). Poles and zeros give useful insights into a filter's response, and can be used as the basis for digital filter design.
+The second filter used was the Bandstop Butterworth filter. A Bandstop filter is designed to remove a specific frequency range from the signal, while allowing frequencies outside of that range to pass through. The Butterworth filter is a type of filter that has a flat frequency response in the passband and a roll-off in the stopband. This filter was designed to remove the noise in a specific frequency range from the corrupted audio signal.
 
-2.	BANDSTOP BUTTERWORTH FILTER: 
-A Band Stop Filter allows a specific range of frequencies to not pass to the output, while allowing lower and higher frequencies to pass with little attenuation and The Butterworth filter is a type of signal processing filter designed to have a frequency response that is as flat as possible in the passband. It is also referred to as a maximally flat magnitude filter.
+The third and fourth filters used were the Lowpass and Highpass Butterworth filters. A Lowpass filter is designed to allow frequencies below a specific cutoff frequency to pass through, while attenuating frequencies above that cutoff frequency. A Highpass filter is designed to allow frequencies above a specific cutoff frequency to pass through, while attenuating frequencies below that cutoff frequency. These filters were designed to remove noise in specific frequency bands that were either above or below a certain cutoff frequency.
 
-3.	LOWPASS BUTTERWORTH FILTER: 
-The low pass Butterworth filter is an active Low pass filter as it consists of the op-amp. This op-amp operates on non-inverting mode. Hence, the gain of the filter will decide by the resistor R1 and RF. And the cutoff frequency decides by R and C .
+After designing and implementing these filters, a comparative analysis was performed to compare the results of the different techniques. The Fast Fourier Transform (FFT) was used to analyze the frequency spectrum of the corrupted audio signal before and after filtering. The FFT is a mathematical algorithm that converts a time-domain signal into a frequency-domain signal, allowing the frequency components of the signal to be visualized.
 
-4.	HIGH PASS BUTTERWORTH FILTER:
-The high pass Butterworth filter is an active high pass filter as it consists of the op-amp. This op-amp operates on non-inverting mode. Hence, the gain of the filter will decide by the resistor R1 and RF. And the cutoff frequency decides by R and C.
+Furthermore, the cost effectiveness and implementation complexity of the three filtering techniques were evaluated. Cost effectiveness refers to the cost of implementing each technique, including the cost of hardware and software resources. Implementation complexity refers to the level of difficulty in designing and implementing each technique.
 
+Overall, this project demonstrated the effectiveness of various filtering techniques in removing noise from a corrupted audio signal. The comparative analysis allowed for the selection of the most appropriate filtering technique based on the cost effectiveness, implementation complexity, and filtering performance.
